@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessibility Search App</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main>
@@ -18,8 +19,12 @@
                 <label class="offscreen" for="searchInput">Enter a search term</label>
                 <input type="text" id="searchInput" autocomplete="off" />
                 <!-- creating a clear X button with a DIV element because we don't want it to take the place of the submit button when ENTER is pressed-->
-                <div id="clear" class="none btn clear" role="button" tabindex="0" aria-label="Clear Search Terms">X</div>
-                <button id="searchBtn" class="btn searchBtn" aria-label="Submit button"></button>
+                <div id="clear" class="none btn clear" role="button" tabindex="0" aria-label="Clear Search Terms">
+                    <img src="https://s2.svgbox.net/materialui.svg?ic=clear&color=000" width="32" height="32">
+                </div>
+                <button id="searchBtn" class="btn searchBtn" aria-label="Submit button">
+                    <img src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=000" width="32" height="32">
+                </button>
             </form>
         </section>
 
@@ -28,7 +33,23 @@
             <div class="statsBar">
                 <div id="stats" class="stats" aria-live="assertive"></div>
             </div>
-            <div id="earchResults" class="searchResults">
+            <div id="searchResults" class="searchResults">
+
+                <!-- this will be added dynamically, adding now for styling purposes -->
+                <div class="resultItem">
+                    <div class="resultTitle">
+                        <a href="#">Rottweiler</a>
+                    </div>
+                    <div class="resultContents">
+                        <div class="resultImage">
+                            <img src="" alt="Rottweiler">
+                        </div>
+                        <div class="resultText">
+                            <p class="resultDescription">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- this will be added dynamically, adding now for styling purposes -->
 
             </div>
         </section>
