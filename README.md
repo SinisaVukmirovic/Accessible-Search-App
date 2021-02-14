@@ -13,7 +13,8 @@ ___
 
 ###### For button elements that we don't want to take place of an actual button, and being pressed on ENTER press before the actual submit/search buttons, we create them with DIV element, giving it a role="button" and a tabindex="0" since it will not have it by default, like an actual button element
 
-###### 
+###### We give aria-live="assertive" attribute to element we want the screen readers to anounce
+
 ###### 
 ###### 
 ###### 
