@@ -1,8 +1,9 @@
 :root {
+    --theme-clr: cornflowerblue;
+    --accent-clr: #fff;
     --bg-clr: #222;
     --input-bg-clr: #333;
     --text-clr: #ddd;
     --lighter-clr: #777;
-    --icon-clr: lime;
     --hover-clr: red;
 }

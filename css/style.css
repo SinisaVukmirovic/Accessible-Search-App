@@ -33,7 +33,7 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    color: #fff;
+    color: var(--accent-clr);
     font-weight: bold;
 }
     .logo span {
@@ -92,7 +92,7 @@ main {
         width: 2rem;
         height: auto;
         padding: .25rem;
-        fill: var(--icon-clr);
+        fill: var(--theme-clr);
     }
     .btn.clear svg {
         width: 1.5rem;
@@ -103,8 +103,67 @@ main {
         fill: var(--hover-clr);
     }
 
-.none {
+#clear.none {
     display: none;
 }
 
+/* results section styling */
+/* .results {
+    
+} */
 
+.statsBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--theme-clr);
+}
+
+.resultItem {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.resultTitle {
+    margin: .5rem auto .5rem 1rem;
+}
+    .resultTitle a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: var(--accent-clr);
+        line-height: 1.5rem;
+    }
+    .resultTitle a:hover {
+        color: var(--theme-clr);
+    }
+    /* .resultTitle a:visited {
+        color: var(--light-clr);
+    } */
+
+.resultContents {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: .5rem;
+}
+
+.resultImage img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+    footer a {
+        text-decoration: none;
+        color: var(--accent-clr);
+    }
+    footer a:hover {
+        text-decoration: none;
+        color: var(--theme-clr);
+    }
