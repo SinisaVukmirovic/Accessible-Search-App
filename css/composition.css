@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+    /* border: 1px solid lime; */
+}
+
+body {
+    background-color: var(--bg-clr);
+    color: var(--text-clr);
+    /* width: 70%; */
+    min-height: 100vh;
+    font-family: sans-serif;
+    outline: 1px solid red;
+}
+
+main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
