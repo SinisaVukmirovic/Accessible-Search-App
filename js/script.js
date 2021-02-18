@@ -1,5 +1,6 @@
 import { setSearchFocus } from './searchInput.js'; 
 import { searchTerm } from './dataFunctions.js'; 
+import { retrieveSearchResults } from './dataFunctions.js'; 
 
 document.addEventListener('readystatechange', e => {
     if (e.target.readyState === 'complete') {
