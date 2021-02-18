@@ -1,5 +1,6 @@
 import { setSearchFocus } from './searchInput.js'; 
-import { searchTerm } from './dataFunctions.js'; 
+import { buildSearchResults } from './searchResults.js';
+import { getSearchTerm } from './dataFunctions.js'; 
 import { retrieveSearchResults } from './dataFunctions.js'; 
 
 document.addEventListener('readystatechange', e => {
@@ -36,5 +37,7 @@ const processTheSearch = async () => {
 
     if (searchTerm === '') return;
 
-    const resultArray = await retrieveSearchResults(searsearchTerm);
+    const resultsArray = await retrieveSearchResults(searchTerm);
+
+    if (searchTerm.length) buildSearchResults(resultsArray);
 };
