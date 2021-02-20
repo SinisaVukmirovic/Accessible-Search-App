@@ -6,7 +6,7 @@ export const deleteSearchResults = () => {
     while(childElem) {
         parentElem.removeChild(childElem);
 
-        childElem - parentElem.lastElementChild;
+        childElem = parentElem.lastElementChild;
     }
 };
 

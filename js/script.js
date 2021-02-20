@@ -1,7 +1,6 @@
-import { setSearchFocus, showClearInputBtn } from './searchInput.js'; 
+import { setSearchFocus, showClearInputBtn, clearSearchText, clearPushListener } from './searchInput.js'; 
 import { deleteSearchResults, buildSearchResults, clearStatsLine, setStatsLine } from './searchResults.js';
-import { getSearchTerm } from './dataFunctions.js'; 
-import { retrieveSearchResults } from './dataFunctions.js';
+import { getSearchTerm, retrieveSearchResults } from './dataFunctions.js';
 
 document.addEventListener('readystatechange', e => {
     if (e.target.readyState === 'complete') {
@@ -15,6 +14,10 @@ const initApp = () => {
     // event listeners for showing the clear input field btn when typing
     const searchInput = document.querySelector('#searchInput');
     searchInput.addEventListener('input', showClearInputBtn);
+    // clear search text functionality
+    const clear = document.querySelector('#clear');
+    clear.addEventListener('click', clearSearchText);
+    clear.addEventListener('keydown', clearPushListener);
 
     // 3 listeners clear text
     const form = document.querySelector('#searchBar');
