@@ -37,10 +37,9 @@ const getMaxChars = () => {
     const width = window.innerWidth || document.body.clientWidth;
     let maxChars;
 
-    if (width < 414) maxChars = 65;
-    if (width >= 414 && width < 1400) maxChars = 100;
-    if (width >= 1400) maxChars = 130;
-
+    if (width < 414) maxChars = 105;
+    if (width >= 414 && width < 1024) maxChars = 250;
+    if (width >= 1024) maxChars = 550;
     return maxChars;
 };
 
