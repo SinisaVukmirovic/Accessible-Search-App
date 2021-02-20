@@ -1,3 +1,15 @@
+export const deleteSearchResults = () => {
+    const parentElem = document.querySelector('#searchResults');
+
+    let childElem = parentElem.lastElementChild;
+
+    while(childElem) {
+        parentElem.removeChild(childElem);
+
+        childElem - parentElem.lastElementChild;
+    }
+};
+
 export const buildSearchResults = (resultsArray) => {
     resultsArray.forEach(result => {
         const resultItem = createResultItem(result);
@@ -61,4 +73,18 @@ const createResultText = (result) => {
     resultText.append(resultDescription);
 
     return resultText;
+};
+
+export const clearStatsLine = () => {
+    document.querySelector('#stats').textContent = '';
+};
+
+export const setStatsLine = (numberOfResults) => {
+    const statsLine = document.querySelector('#stats');
+
+    if (numberOfResults) {
+        statsLine.textContent = `Displaying ${numberOfResults} results.`;
+    } else {
+        statsLine.textContent = `Sorry, no results found!`;
+    }
 };
