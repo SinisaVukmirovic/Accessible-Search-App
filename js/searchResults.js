@@ -83,7 +83,7 @@ export const setStatsLine = (numberOfResults) => {
     const statsLine = document.querySelector('#stats');
 
     if (numberOfResults) {
-        statsLine.textContent = `Displaying ${numberOfResults} results.`;
+        statsLine.textContent = `Displaying ${numberOfResults} search results.`;
     } else {
         statsLine.textContent = `Sorry, no results found!`;
     }
