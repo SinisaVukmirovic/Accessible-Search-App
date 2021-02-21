@@ -129,12 +129,3 @@ footer {
         text-decoration: none;
         color: var(--theme-clr);
     }
-
-/* media queries for larger screens */
-@media only screen and (min-width: 415px) and (max-width: 768px) {
-    
-}
-
-@media only screen and (min-width: 769px) {
-    
-}
