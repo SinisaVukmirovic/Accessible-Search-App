@@ -15,8 +15,8 @@ html {
 /* removing offset elements from the screen, 
 but keeping them still awailable for screen readers */
 .offscreen {
-    font-size: .5rem;
-    display: none;
+    position: absolute;
+    left: -1000rem;
 }
 
 #clear.none {
